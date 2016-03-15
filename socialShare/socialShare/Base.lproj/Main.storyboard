@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i3n-n2-vYY">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Twitter" id="Iwy-1X-SoT">
+                                        <connections>
+                                            <action selector="twitterButtonTapped:" destination="BYZ-38-t0r" id="uHZ-sA-waq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Facebook" id="Io8-4b-vfS">
+                                        <connections>
+                                            <action selector="facebookButtonTapped:" destination="BYZ-38-t0r" id="wcW-hg-HZS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="More" id="gNR-mm-XBZ">
+                                        <connections>
+                                            <action selector="moreButtonTapped:" destination="BYZ-38-t0r" id="sqp-n8-ckA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="NA" id="Lmk-12-yWZ">
+                                        <connections>
+                                            <action selector="naButtonTapped:" destination="BYZ-38-t0r" id="ZMZ-mc-7es"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="0.15572038558670187" green="1" blue="0.3840003121612019" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Write your tweet here!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cbB-bd-2f2">
+                                <rect key="frame" x="40" y="64" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Write your Facebook post here!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pKU-dr-Bpr">
+                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Write your post here!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Ev-Bt-dur">
+                                <rect key="frame" x="40" y="382" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="pKU-dr-Bpr" secondAttribute="trailing" constant="20" id="8io-AK-JgV"/>
+                            <constraint firstItem="pKU-dr-Bpr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="JTR-JE-xrH"/>
+                            <constraint firstItem="pKU-dr-Bpr" firstAttribute="top" secondItem="cbB-bd-2f2" secondAttribute="bottom" constant="28" id="Xtx-TZ-fAM"/>
+                            <constraint firstItem="1Ev-Bt-dur" firstAttribute="top" secondItem="pKU-dr-Bpr" secondAttribute="bottom" constant="34" id="ZlE-QZ-EBD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cbB-bd-2f2" secondAttribute="trailing" constant="20" id="Ztl-5K-c8s"/>
+                            <constraint firstItem="cbB-bd-2f2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="cfi-4o-mbI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Ev-Bt-dur" secondAttribute="trailing" constant="20" id="exk-CN-Rdj"/>
+                            <constraint firstItem="i3n-n2-vYY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="jG4-9P-idH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i3n-n2-vYY" secondAttribute="trailing" constant="-20" id="o7P-Pj-9Ug"/>
+                            <constraint firstItem="cbB-bd-2f2" firstAttribute="top" secondItem="i3n-n2-vYY" secondAttribute="bottom" id="pLk-LY-JfP"/>
+                            <constraint firstItem="i3n-n2-vYY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="qFk-rj-XnD"/>
+                            <constraint firstItem="1Ev-Bt-dur" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="rd1-G7-1fU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="facebookTextView" destination="pKU-dr-Bpr" id="qcf-kR-WVh"/>
+                        <outlet property="moreTextView" destination="1Ev-Bt-dur" id="oUY-oC-mWM"/>
+                        <outlet property="twitterTextView" destination="cbB-bd-2f2" id="ijk-Rk-Gsp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="201.59999999999999" y="321.39333333333332"/>
+        </scene>
+    </scenes>
+</document>
