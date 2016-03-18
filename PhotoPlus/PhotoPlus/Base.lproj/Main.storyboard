@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQB-bM-UKo">
+                                <rect key="frame" x="24" y="20" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Vt-0z-uiA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2w-L4-wgI">
+                                <rect key="frame" x="253" y="20" width="48" height="30"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sZk-v3-bhe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EqK-Gm-xJg">
+                                <rect key="frame" x="135" y="518" width="51" height="30"/>
+                                <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="updateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JoO-2Y-k4a"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="draw-raven.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="84f-80-N4M">
+                                <rect key="frame" x="0.0" y="153" width="320" height="261"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="84f-80-N4M" secondAttribute="height" multiplier="320:261" id="ucW-sJ-gXQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ux5-D4-Ls6">
+                                <rect key="frame" x="121" y="24" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d2w-L4-wgI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="G3T-Q5-MUn"/>
+                            <constraint firstItem="Ux5-D4-Ls6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="4" id="JQQ-pC-IsU"/>
+                            <constraint firstItem="nQB-bM-UKo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="StU-zW-9fe"/>
+                            <constraint firstItem="Ux5-D4-Ls6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V0W-6G-Kj1"/>
+                            <constraint firstItem="d2w-L4-wgI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VBO-jg-aki"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EqK-Gm-xJg" secondAttribute="bottom" constant="20" id="Y7d-5P-AO1"/>
+                            <constraint firstItem="84f-80-N4M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="b7a-Zc-iUI"/>
+                            <constraint firstItem="84f-80-N4M" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bpC-UR-Auy"/>
+                            <constraint firstItem="nQB-bM-UKo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="k9H-Vn-sdC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="84f-80-N4M" secondAttribute="trailing" constant="-20" id="rLz-w1-ASj"/>
+                            <constraint firstItem="84f-80-N4M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uDw-Kh-2tP"/>
+                            <constraint firstItem="EqK-Gm-xJg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wYr-SV-vCo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="84f-80-N4M" id="f91-Gw-WxL"/>
+                        <outlet property="loginButton" destination="nQB-bM-UKo" id="BSe-5j-hzz"/>
+                        <outlet property="logoutButton" destination="d2w-L4-wgI" id="bMA-MA-Ed8"/>
+                        <outlet property="updateButton" destination="EqK-Gm-xJg" id="qBr-F1-hCG"/>
+                        <outlet property="usernameLabel" destination="Ux5-D4-Ls6" id="Fz3-q9-h7G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="321"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="draw-raven.jpg" width="550" height="425"/>
+    </resources>
+</document>
